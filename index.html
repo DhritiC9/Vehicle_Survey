@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<title>Survey Form</title>
+<link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <div class="reg">
+
+    <h1 id="title"> MIT Hostel Vehicle Survey Form</h1>
+    <p id="description">Thank you for taking out the time and filling this form.</p>
+<form id= "survey-form" method="post" action="C:\Users\Dhriti\Desktop\Vehicle Survey Form\data.php">
+<fieldset>
+  <label id="name-label" for="name">Name <input name="name" placeholder="full name required" required id="name" type="text"/></label>
+<label id="email-label" for="email">Email <input name="email" placeholder="valid email" required type="email" id="email"/></label> 
+<label id="number-label" for="number">Age <input name="age" placeholder="min age=18" required id="number" type="number" value="16" min="16" max="90"/></label>
+ <label >Gender:<label for="male"><input value="male" id="male" type="radio" name="gender" class="inline" checked /> Male</label><label for="female"><input id="female" value="female" type="radio" name="gender" class="inline" /> Female</label>
+ <label for="other"><input id="other" type="radio" value="other" name="gender" class="inline" /> Other</label></label>
+  </fieldset>
+  <fieldset>
+
+    <label for="dropdown">What is your Branch?
+      <select name="branch" required id="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">CSE Core</option>
+        <option value="2">Cse AI</option>
+        <option value="3">Cyber Security</option>
+        <option value="4">IT</option>
+        <option value="5">ECE</option>
+        <option value="6">Other</option>
+</select>
+<label >Hostel:<label for="hb1"><input id="hb1" checked type="radio" name="hostel" value="hb1" class="inline" /> HB1</label><label for="hb2"><input id="hb2" type="radio" name="hostel" value="hb2" class="inline" /> HB2</label>
+ <label for="hb3"><input id="hb3" type="radio" name="hostel" class="inline" value="hb3" /> HB3</label></label>
+
+    </fieldset>
+    <fieldset>
+      <label id="number-vehicle" for="no">Number of Vehicles  <input placeholder="max=5" required name="no" id="no" type="number" value="0" min="0" max="5"/></label>
+      <label>Vehicles:
+        <label for="cycle"> <input class="inline" name="cycle" type="checkbox" id="cycle" value="cycle"/>Cycle</label>
+         <label for="scooter"> <input class="inline" name="scooter" type="checkbox" id="scooter" value="scooter"/>Scooter</label>
+          <label for="bike"><input class="inline" name="bike" type="checkbox" id="bike" value="bike"/> Bike</label>
+           <label for="car"> <input class="inline" name="car" type="checkbox" id="car" value="car"/>Car</label>
+
+      </fieldset>
+      <fieldset>
+        <label for="description">Give a description of your Vehicles:
+          <textarea id="description" name="description" rows="5" cols="30" placeholder="Black colour SUV..."></textarea>
+
+        </fieldset>
+<input type="submit" id="submit" value="Submit" />
+
+
+</form>
+</div>
+</body>
+</html>
